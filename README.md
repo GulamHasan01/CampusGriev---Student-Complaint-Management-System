@@ -56,3 +56,26 @@ A cloud-based complaint management system for educational institutions, built wi
 ```bash
 git clone https://github.com/GulamHasan01/CampusGriev---Student-Complaint-Management-System.git
 cd CampusGriev---Student-Complaint-Management-System
+````
+2.Install dependencies
+````
+pip install -r requirements.txt
+````
+3.Set up environment variables
+Create a .env file based on .env.example:
+````
+AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
+AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
+LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
+APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+````
+## 🌐 Live Deployment
+
+The application is deployed on **Azure App Services** and can be accessed at:  
+🔗 [https://6604193gulamhasang1-fcbkgjg4g7h3ebck.centralindia-01.azurewebsites.net](https://6604193gulamhasang1-fcbkgjg4g7h3ebck.centralindia-01.azurewebsites.net)
+
+### Deployment Details:
+- **Service:** Azure Web Apps
+- **Region:** Central India
+- **Runtime Stack:** Python 3.8
+- **CI/CD:** GitHub Actions (optional - add if used)
